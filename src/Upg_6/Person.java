@@ -27,16 +27,29 @@ public class Person {
 	}
 	
 	//account management
-	public void addAccount(Account account) {
-		accountList.add(account);
+	public void addAccount(Account account) { 
+		//look if person already has account first
+		if(!hasAccount(account)) {
+			accountList.add(account);
+		}else {
+			//System.out.println("The person already has the account");
+		}
 	}
-	public void removeAccount(Account account) { //...........behövs denna?.. stämmer denna?.......
+	public Boolean hasAccount (Account account) {
+		for(Account ac : accountList) {
+			if(ac == account) {
+				return true;
+			}
+		}
+		return false;
+	}
+	public void removeAccount(Account account) {
 		if(accountList.contains(account)) {
 			accountList.remove(account);
 		}else {
 			//System.out.println("Could not find account " + account.getNbr() + "(accountNbr) to delete in the accountList.");
 		}
-	}
+	}	
 	
 	//getters
 	public String getPNbr() {
