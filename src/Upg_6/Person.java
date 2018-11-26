@@ -16,21 +16,21 @@ public class Person {
 	}
 	
 	//setters
-	public void setPNbr (String newPNbr) {
-		pNbr = newPNbr;
+	public void setPNbr (String pNbr) {
+		this.pNbr = pNbr;
 	}
-	public void setName(String newName) {
-		name = newName;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public void setAccountList(ArrayList<Account> newAccountList) {
-		accountList = newAccountList;
+	public void setAccountList(ArrayList<Account> accountList) {
+		this.accountList = accountList;
 	}
 	
 	//account management
 	public void addAccount(Account account) {
 		accountList.add(account);
 	}
-	public void removeAccount(Account account) {
+	public void removeAccount(Account account) { //...........behövs denna?.. stämmer denna?.......
 		if(accountList.contains(account)) {
 			accountList.remove(account);
 		}else {

@@ -16,8 +16,8 @@ public class PersonRegister {
 		return personList;
 	}
 	//setter
-	public void setPersonList(ArrayList<Person> newPersonList) {
-		personList = newPersonList;
+	public void setPersonList(ArrayList<Person> personList) {
+		this.personList = personList;
 	}
 	
 	
@@ -41,6 +41,13 @@ public class PersonRegister {
 	}
 	
 	public Person removePerson(String pNbr) { //remove person
+		/*Person p = findPerson(pNbr); //alternativ lösning
+		if(personList.contains(p)) {
+			personList.remove(p);
+			return p;
+		}else {
+			return null;
+		}*/
 		for(Person person : personList) {
 			if(person.getPNbr().equals(pNbr)) {
 				personList.remove(person);
