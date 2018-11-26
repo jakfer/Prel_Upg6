@@ -9,10 +9,9 @@ public class Person {
 	private ArrayList<Account> accountList = new ArrayList<Account>();
 	
 	//constructor
-	public Person(String pNbr, String name, PersonRegister personRegister) {
+	public Person(String pNbr, String name) {
 		this.pNbr = pNbr;
 		this.name = name;
-		personRegister.addPerson(this);
 	}
 	
 	//setters
@@ -43,9 +42,10 @@ public class Person {
 		//Systm.out.println("person does not have account");
 		return null;
 	}
-	public void removeAccount(Account account) {
-		if(accountList.contains(account)) {
-			accountList.remove(account);
+	public void removeAccount(String acNbr) {
+		Account ac = findAccount(acNbr);
+		if(accountList.contains(ac)) {
+			accountList.remove(ac);
 		}else {
 			//System.out.println("Could not find account " + account.getNbr() + "(accountNbr) to delete in the accountList.");
 		}
