@@ -26,7 +26,7 @@ public class PersonRegister {
 		if(findPerson(p.getPNbr()) == null) {
 			personList.add(p);
 		}else {
-			System.out.println("Person " + p + " is already in the PersonRegister.");
+			//System.out.println("Person " + p + " is already in the PersonRegister.");
 		}
 	}
 	
@@ -36,7 +36,7 @@ public class PersonRegister {
 				return person;
 			}
 		}
-		System.out.println("Could not find a Person with the pNbr: " + pNbr + " in the PersonRegister.");
+		//System.out.println("Could not find a Person with the pNbr: " + pNbr + " in the PersonRegister.");
 		return null;
 	}
 	
@@ -54,7 +54,7 @@ public class PersonRegister {
 				return person;
 			}
 		}
-		System.out.println("Could not find a Person with the pNbr: " + pNbr + " to remove from the PersonRegister.");
+		//System.out.println("Could not find a Person with the pNbr: " + pNbr + " to remove from the PersonRegister.");
 		return null;
 	}
 }

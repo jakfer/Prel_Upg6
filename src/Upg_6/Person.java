@@ -34,7 +34,7 @@ public class Person {
 		if(accountList.contains(account)) {
 			accountList.remove(account);
 		}else {
-			System.out.println("Could not find account " + account.getNbr() + "(accountNbr) to delete in the accountList.");
+			//System.out.println("Could not find account " + account.getNbr() + "(accountNbr) to delete in the accountList.");
 		}
 	}
 	
