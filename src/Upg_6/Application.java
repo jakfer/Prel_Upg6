@@ -14,11 +14,11 @@ import javax.swing.SwingConstants;
 public class Application {
 
 	private JFrame frmPersonAccount;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
+	private JTextField textField_Name;
+	private JTextField textField_pNbr;
+	private JTextField textField_AccountNumber;
+	private JTextField textField_Balance;
+	private JTextField textField_Owner;
 
 	/**
 	 * Launch the application.
@@ -65,44 +65,44 @@ public class Application {
 		lblAccountManagement.setBounds(10, 299, 126, 16);
 		frmPersonAccount.getContentPane().add(lblAccountManagement);
 		
-		JLabel lblNewLabel = new JLabel("Name");
-		lblNewLabel.setBounds(92, 58, 56, 16);
-		frmPersonAccount.getContentPane().add(lblNewLabel);
+		JLabel lblName = new JLabel("Name");
+		lblName.setBounds(92, 58, 56, 16);
+		frmPersonAccount.getContentPane().add(lblName);
 		
 		JLabel lblPnbr = new JLabel("pNbr");
 		lblPnbr.setBounds(92, 110, 56, 16);
 		frmPersonAccount.getContentPane().add(lblPnbr);
 		
-		textField = new JTextField();
-		textField.setBounds(164, 55, 116, 22);
-		frmPersonAccount.getContentPane().add(textField);
-		textField.setColumns(10);
+		textField_Name = new JTextField();
+		textField_Name.setBounds(164, 55, 116, 22);
+		frmPersonAccount.getContentPane().add(textField_Name);
+		textField_Name.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(164, 107, 116, 22);
-		frmPersonAccount.getContentPane().add(textField_1);
-		textField_1.setColumns(10);
+		textField_pNbr = new JTextField();
+		textField_pNbr.setBounds(164, 107, 116, 22);
+		frmPersonAccount.getContentPane().add(textField_pNbr);
+		textField_pNbr.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Add");
-		btnNewButton.setBounds(92, 170, 97, 25);
-		frmPersonAccount.getContentPane().add(btnNewButton);
+		JButton btnAdd_1 = new JButton("Add");
+		btnAdd_1.setBounds(92, 149, 97, 25);
+		frmPersonAccount.getContentPane().add(btnAdd_1);
 		
-		JButton btnFind = new JButton("Find");
-		btnFind.setBounds(201, 170, 97, 25);
-		frmPersonAccount.getContentPane().add(btnFind);
+		JButton btnFind_1 = new JButton("Find");
+		btnFind_1.setBounds(193, 149, 97, 25);
+		frmPersonAccount.getContentPane().add(btnFind_1);
 		
-		JButton btnRemove = new JButton("Remove");
-		btnRemove.setBounds(302, 170, 97, 25);
-		frmPersonAccount.getContentPane().add(btnRemove);
+		JButton btnRemove_1 = new JButton("Remove");
+		btnRemove_1.setBounds(295, 149, 97, 25);
+		frmPersonAccount.getContentPane().add(btnRemove_1);
 		
 		JButton btnPrintRegister = new JButton("Print register");
-		btnPrintRegister.setBounds(411, 170, 131, 25);
+		btnPrintRegister.setBounds(92, 187, 300, 25);
 		frmPersonAccount.getContentPane().add(btnPrintRegister);
 		
-		JLabel lblNewLabel_1 = new JLabel("Response");
-		lblNewLabel_1.setVerticalAlignment(SwingConstants.TOP);
-		lblNewLabel_1.setBounds(92, 208, 450, 61);
-		frmPersonAccount.getContentPane().add(lblNewLabel_1);
+		JLabel lblResponse_1 = new JLabel("Response");
+		lblResponse_1.setVerticalAlignment(SwingConstants.TOP);
+		lblResponse_1.setBounds(92, 217, 450, 52);
+		frmPersonAccount.getContentPane().add(lblResponse_1);
 		
 		JLabel lblAccountNumber = new JLabel("Account number");
 		lblAccountNumber.setBounds(52, 347, 97, 16);
@@ -116,40 +116,40 @@ public class Application {
 		lblOwner.setBounds(52, 441, 97, 16);
 		frmPersonAccount.getContentPane().add(lblOwner);
 		
-		JButton button = new JButton("Add");
-		button.setBounds(93, 481, 97, 25);
-		frmPersonAccount.getContentPane().add(button);
+		JButton btnAdd_2 = new JButton("Add");
+		btnAdd_2.setBounds(93, 481, 97, 25);
+		frmPersonAccount.getContentPane().add(btnAdd_2);
 		
-		JButton button_1 = new JButton("Find");
-		button_1.setBounds(202, 481, 97, 25);
-		frmPersonAccount.getContentPane().add(button_1);
+		JButton btnFind_2 = new JButton("Find");
+		btnFind_2.setBounds(202, 481, 97, 25);
+		frmPersonAccount.getContentPane().add(btnFind_2);
 		
-		JButton button_2 = new JButton("Remove");
-		button_2.setBounds(313, 481, 97, 25);
-		frmPersonAccount.getContentPane().add(button_2);
+		JButton btnRemove_2 = new JButton("Remove");
+		btnRemove_2.setBounds(313, 481, 97, 25);
+		frmPersonAccount.getContentPane().add(btnRemove_2);
 		
-		JButton btnShow = new JButton("Print accounts");
-		btnShow.setBounds(286, 437, 124, 25);
-		frmPersonAccount.getContentPane().add(btnShow);
+		JButton btnPrintAccounts = new JButton("Print accounts");
+		btnPrintAccounts.setBounds(286, 437, 124, 25);
+		frmPersonAccount.getContentPane().add(btnPrintAccounts);
 		
-		JLabel lblNewLabel_2 = new JLabel("Response");
-		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
-		lblNewLabel_2.setBounds(92, 519, 377, 69);
-		frmPersonAccount.getContentPane().add(lblNewLabel_2);
+		JLabel lblResponse_2 = new JLabel("Response");
+		lblResponse_2.setVerticalAlignment(SwingConstants.TOP);
+		lblResponse_2.setBounds(92, 519, 377, 69);
+		frmPersonAccount.getContentPane().add(lblResponse_2);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(165, 347, 116, 22);
-		frmPersonAccount.getContentPane().add(textField_2);
+		textField_AccountNumber = new JTextField();
+		textField_AccountNumber.setColumns(10);
+		textField_AccountNumber.setBounds(165, 347, 116, 22);
+		frmPersonAccount.getContentPane().add(textField_AccountNumber);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(165, 392, 116, 22);
-		frmPersonAccount.getContentPane().add(textField_3);
+		textField_Balance = new JTextField();
+		textField_Balance.setColumns(10);
+		textField_Balance.setBounds(165, 392, 116, 22);
+		frmPersonAccount.getContentPane().add(textField_Balance);
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
-		textField_4.setBounds(165, 438, 116, 22);
-		frmPersonAccount.getContentPane().add(textField_4);
+		textField_Owner = new JTextField();
+		textField_Owner.setColumns(10);
+		textField_Owner.setBounds(165, 438, 116, 22);
+		frmPersonAccount.getContentPane().add(textField_Owner);
 	}
 }
