@@ -28,14 +28,13 @@ public class Person {
 	
 	//account management
 	public void addAccount(Account account) { 
-		//look if person already has account first
-		if(!hasAccount(account)) {
+		if(!hasAccount(account)) {	//look if person already has account first
 			accountList.add(account);
 		}else {
 			//System.out.println("The person already has the account");
 		}
 	}
-	public Boolean hasAccount (Account account) {
+	public Boolean hasAccount (Account account) { // check if person has the account
 		for(Account ac : accountList) {
 			if(ac == account) {
 				return true;
