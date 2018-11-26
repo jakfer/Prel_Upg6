@@ -28,19 +28,20 @@ public class Person {
 	
 	//account management
 	public void addAccount(Account account) { 
-		if(!hasAccount(account)) {	//look if person already has account first
+		if(findAccount(account.getNbr()) == null) {	//look if person already has account first
 			accountList.add(account);
 		}else {
 			//System.out.println("The person already has the account");
 		}
 	}
-	public Boolean hasAccount (Account account) { // check if person has the account
+	public Account findAccount (String acNbr) { // check if person has the account
 		for(Account ac : accountList) {
-			if(ac == account) {
-				return true;
+			if(ac.getNbr().equals(acNbr)) {
+				return ac;
 			}
 		}
-		return false;
+		//Systm.out.println("person does not have account");
+		return null;
 	}
 	public void removeAccount(Account account) {
 		if(accountList.contains(account)) {
