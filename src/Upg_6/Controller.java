@@ -44,6 +44,26 @@ public class Controller {
 		return stringsToReturn;
 	}
 	
+	public String[] printRegister() {
+		String[] stringsToReturn = null;
+		if(persons.getPersonList() != null) {
+			stringsToReturn = new String[persons.getPersonList().size()];
+			for(int i = 0; i<stringsToReturn.length; i++) {
+				Person p = persons.getPersonList().get(i);
+				if(p != null) {
+					stringsToReturn[i] = p.getName() + " | " + p.getPNbr();
+					String[] accounts = findPersonsAccounts(p.getPNbr());
+					if(accounts != null) {
+						for(int u = 0; u<accounts.length; u++) {
+							stringsToReturn[i] += (" | " + accounts[u]);
+						}
+					}
+				}
+			}
+		}
+		return stringsToReturn; //ex    Jakob | 96xxxx | ac1: 200kr | ac2: 400kr | ac3: 92303kr ...
+	}
+	
 	
 	//person methods (account management)
 	public void addAccount(String nbr, Double balance, Person owner) {
@@ -78,9 +98,9 @@ public class Controller {
 			ArrayList<Account> accounts = p.getAccountList();
 			stringsToReturn = new String[accounts.size()];
 			for(int i = 0; i < stringsToReturn.length; i++) {
-				stringsToReturn[i] = accounts.get(i).getNbr() + " | " + accounts.get(i).getBalance().toString();
+				stringsToReturn[i] = accounts.get(i).getNbr() + ": " + accounts.get(i).getBalance().toString() + "kr";
 			}
 		}
-		return stringsToReturn;
+		return stringsToReturn; //ex   ac1: 300kr
 	}
 }
