@@ -54,7 +54,7 @@ public class Application {
 		frmPersonAccount.getContentPane().setLayout(null);
 		
 		JSeparator separator = new JSeparator();
-		separator.setBounds(0, 282, 697, 2);
+		separator.setBounds(0, 298, 697, 2);
 		frmPersonAccount.getContentPane().add(separator);
 		
 		JLabel lblPersonsManagement = new JLabel("Persons management");
@@ -62,7 +62,7 @@ public class Application {
 		frmPersonAccount.getContentPane().add(lblPersonsManagement);
 		
 		JLabel lblAccountManagement = new JLabel("Account management");
-		lblAccountManagement.setBounds(10, 299, 126, 16);
+		lblAccountManagement.setBounds(10, 311, 126, 16);
 		frmPersonAccount.getContentPane().add(lblAccountManagement);
 		
 		JLabel lblName = new JLabel("Name");
@@ -74,12 +74,12 @@ public class Application {
 		frmPersonAccount.getContentPane().add(lblPnbr);
 		
 		textField_Name = new JTextField();
-		textField_Name.setBounds(164, 55, 116, 22);
+		textField_Name.setBounds(164, 55, 126, 22);
 		frmPersonAccount.getContentPane().add(textField_Name);
 		textField_Name.setColumns(10);
 		
 		textField_pNbr = new JTextField();
-		textField_pNbr.setBounds(164, 107, 116, 22);
+		textField_pNbr.setBounds(164, 107, 126, 22);
 		frmPersonAccount.getContentPane().add(textField_pNbr);
 		textField_pNbr.setColumns(10);
 		
@@ -99,57 +99,55 @@ public class Application {
 		btnPrintRegister.setBounds(92, 187, 300, 25);
 		frmPersonAccount.getContentPane().add(btnPrintRegister);
 		
-		JLabel lblResponse_1 = new JLabel("Response");
-		lblResponse_1.setVerticalAlignment(SwingConstants.TOP);
-		lblResponse_1.setBounds(92, 217, 450, 52);
-		frmPersonAccount.getContentPane().add(lblResponse_1);
-		
 		JLabel lblAccountNumber = new JLabel("Account number");
-		lblAccountNumber.setBounds(52, 347, 97, 16);
+		lblAccountNumber.setBounds(92, 359, 97, 16);
 		frmPersonAccount.getContentPane().add(lblAccountNumber);
 		
 		JLabel lblBalance = new JLabel("Balance");
-		lblBalance.setBounds(52, 392, 97, 16);
+		lblBalance.setBounds(92, 404, 97, 16);
 		frmPersonAccount.getContentPane().add(lblBalance);
 		
 		JLabel lblOwner = new JLabel("Owner (pnr)");
-		lblOwner.setBounds(52, 441, 97, 16);
+		lblOwner.setBounds(92, 453, 97, 16);
 		frmPersonAccount.getContentPane().add(lblOwner);
 		
 		JButton btnAdd_2 = new JButton("Add");
-		btnAdd_2.setBounds(93, 481, 97, 25);
+		btnAdd_2.setBounds(92, 493, 97, 25);
 		frmPersonAccount.getContentPane().add(btnAdd_2);
 		
 		JButton btnFind_2 = new JButton("Find");
-		btnFind_2.setBounds(202, 481, 97, 25);
+		btnFind_2.setBounds(193, 493, 97, 25);
 		frmPersonAccount.getContentPane().add(btnFind_2);
 		
 		JButton btnRemove_2 = new JButton("Remove");
-		btnRemove_2.setBounds(313, 481, 97, 25);
+		btnRemove_2.setBounds(295, 493, 97, 25);
 		frmPersonAccount.getContentPane().add(btnRemove_2);
 		
-		JButton btnPrintAccounts = new JButton("Print accounts");
-		btnPrintAccounts.setBounds(286, 437, 124, 25);
+		JButton btnPrintAccounts = new JButton("Show accounts");
+		btnPrintAccounts.setBounds(295, 446, 109, 25);
 		frmPersonAccount.getContentPane().add(btnPrintAccounts);
-		
-		JLabel lblResponse_2 = new JLabel("Response");
-		lblResponse_2.setVerticalAlignment(SwingConstants.TOP);
-		lblResponse_2.setBounds(92, 519, 377, 69);
-		frmPersonAccount.getContentPane().add(lblResponse_2);
 		
 		textField_AccountNumber = new JTextField();
 		textField_AccountNumber.setColumns(10);
-		textField_AccountNumber.setBounds(165, 347, 116, 22);
+		textField_AccountNumber.setBounds(174, 356, 116, 22);
 		frmPersonAccount.getContentPane().add(textField_AccountNumber);
 		
 		textField_Balance = new JTextField();
 		textField_Balance.setColumns(10);
-		textField_Balance.setBounds(165, 392, 116, 22);
+		textField_Balance.setBounds(174, 401, 116, 22);
 		frmPersonAccount.getContentPane().add(textField_Balance);
 		
 		textField_Owner = new JTextField();
 		textField_Owner.setColumns(10);
-		textField_Owner.setBounds(165, 438, 116, 22);
+		textField_Owner.setBounds(174, 447, 116, 22);
 		frmPersonAccount.getContentPane().add(textField_Owner);
+		
+		JTextArea response_1 = new JTextArea();
+		response_1.setBounds(92, 223, 498, 69);
+		frmPersonAccount.getContentPane().add(response_1);
+		
+		JTextArea response_2 = new JTextArea();
+		response_2.setBounds(92, 529, 498, 69);
+		frmPersonAccount.getContentPane().add(response_2);
 	}
 }
